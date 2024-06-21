@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="gameboard.css">
+    <link rel="stylesheet" href="leaderboard.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-page">
+            <div class="heading">
+                <h1>CROSS <br>&<br> NOUGHTS</h1>
+                <h2>Battle of Wits with Xs and Os</h2>
+            </div>
+            <div class="img">
+                <img src="https://timvandevall.com/wp-content/uploads/2014/04/Tic-Tac-Toe-Cartoon-200.png"
+                    alt="tictactoe"></img>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div id="modal">
+            <p class="modalmsg">Do you want to reset the game?</p>
+            <button id="finalreset">
+                Reset
+            </button>
+            <button id="cancelbtn">
+                Cancel
+            </button>
+        </div>
+
+        <div class="gameboardsection">
+            <div class="indicators">
+                <button class="active" id="btnX">
+                    Player 1
+                </button>
+                <button id="btnY">
+                    Player 2
+                </button>
+                <button id="btnreset">
+                    Reset
+                </button>
+            </div>
+
+            <div class="grid">
+                <div class="row">
+                    <input type="text" id="b1" class="cell">
+                    <input type="text" id="b2" class="cell">
+                    <input type="text" id="b3" class="cell">
+                </div>
+                <div class="row">
+                    <input type="text" id="b4" class="cell">
+                    <input type="text" id="b5" class="cell">
+                    <input type="text" id="b6" class="cell">
+                </div>
+                <div class="row">
+                    <input type="text" id="b7" class="cell">
+                    <input type="text" id="b8" class="cell">
+                    <input type="text" id="b9" class="cell">
+                </div>
+            </div>
+
+            <div class="thirdsection">
+
+                <div class="leaderboard">
+                    <div class="bgcolor"></div>
+                    <div class="rowss">
+                        <h4>LEADERBOARD</h4>
+                    </div>
+                    <div class="column-lb">
+                        <h4>Player 1</h4>
+                        <input type="text" id="lb-1" class="cell-lb">
+                    </div>
+                    <div class="column-lb">
+                        <h4>Player 2</h4>
+                        <input type="text" id="lb-2" class="cell-lb">
+                    </div>
+                </div>
+                <div class="result">
+                    <h2 id="tie">Its a Tie!</h2>
+                    <h2 id="xwon">Player 2 Won!</h2>
+                    <h2 id="owon">Player 1 Won!</h2>
+                </div>
+                <div id="resetscores">
+                    <button>
+                        Reset Scores
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <script src="indicator.js"></script>
+    <script src="gameboard.js"></script>
+    <script src="winning.js"></script>
+
+</body>
+
+</html>

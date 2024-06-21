@@ -1,0 +1,132 @@
+.thirdsection {
+    display: flex;
+    width: 33%;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+}
+.bgcolor{
+    position: absolute;
+    bottom: 14rem;
+    width: 20rem;
+    height: 17rem;
+    background-color: #FFF5E1;
+    border-radius: 2rem;
+    z-index: -1;
+}
+.leaderboard {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+.column-lb {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "LXGW WenKai TC", cursive;
+    justify-content: center;
+    font-size: 1.8rem;
+    caret-color: transparent;
+}
+.column-lb h4{
+    position: relative;
+    top:1.8rem;
+    color: #0C1844;
+}
+.column-lb input {
+    height: 100px;
+    width: 100px;
+    color: #0C1844;
+    border: 2px solid #FFF5E1;
+    background-color: #FFF5E1;
+    font-family: "LXGW WenKai TC", cursive;
+    font-size: 5rem;
+    text-align: center;
+}
+.rowss{
+    position: absolute;
+    bottom: 25.5rem;
+    text-align: center;
+    font-family: "LXGW WenKai TC", cursive;
+    font-size: 1.8rem;
+}
+/* 
+.lb-grid-container {
+    width: 34%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 200px;
+    height: 100px;
+    position: relative;
+    left: 150px;
+    top: 200px;
+    text-align: center;
+}
+
+.lb-grid-item {
+    border: 1px solid #dc4b4b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+#resetscores button {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 1000;
+    font-size: 20px;
+    width: 18rem;
+    height: 8vh;
+    border-radius: 10px;
+    border: 1px solid #a3b1e7;
+    background-color: #a3b1e7;
+    color: #0C1844;
+    /* position: relative;
+    left: 100px; */
+}
+#resetscores button:hover{
+    background-color:#a783d1 ;
+    color: #ffffff;
+    cursor: pointer;
+}
+.result {
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: "LXGW WenKai TC", cursive;
+    position: relative;
+    top:1.2rem;
+}
+
+#tie {
+    position: absolute;
+    right: 2.5rem;
+    visibility: hidden;
+}
+
+#xwon {
+    position: absolute;
+    /* display: none; */
+    visibility: hidden;
+}
+
+#owon {
+    /* display: none; */
+    visibility: hidden;
+}
+
+.properties {
+    transition: transform 0.6s ease;
+    transform: scale(1.12);
+}
+.highlight{
+    transition: transform 0.6s ease;
+    transform: scale(1.12);
+    border-radius: 1rem;
+    background-color: #a3b1e7;
+    width: 8rem;
+    height: 2.5rem;
+}
